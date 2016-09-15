@@ -13,8 +13,8 @@ int main()
     while(round--){
         printf("#Please threw the Fist you want, 1=scissors 2=stone 3=paper: ");
         scanf("%d",&fist);
-        pc=rand()%3+1;
-        printf("You threw %s, Computer threw %s, ",fistType[fist],fistType[pc]);
+        pc=rand()%3;
+        printf("You threw %s, Computer threw %s, ",fistType[fist-1],fistType[pc]);
         switch(fist-pc){
             case 1:
             printf("YOU WIN!!\n");
